@@ -1,2 +1,205 @@
-<h1>Hi, I'm Ella</h1>
-<p>Portfolio | Research | Blog</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joy Wang | Portfolio</title>
+  <meta name="description" content="Personal portfolio for Joy Wang featuring research, projects, and writing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="hero__container">
+      <nav class="top-nav">
+        <a class="top-nav__brand" href="#top">Joy Wang</a>
+        <div class="top-nav__links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#writing">Writing</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Applied Scientist · Product Builder</p>
+        <h1 class="hero__title">Designing human-centered AI solutions that scale ideas into impact.</h1>
+        <p class="hero__subtitle">
+          I combine rigorous research with full-stack execution to turn ambiguous problems into delightful, data-driven products.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="mailto:youremail@example.com">Say hello</a>
+          <a class="button button--ghost" href="#projects">View my work</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section" id="about">
+      <div class="section__inner">
+        <div class="section__header">
+          <h2>About</h2>
+          <p>Explorer at the intersection of research, product strategy, and user-driven storytelling.</p>
+        </div>
+        <div class="about__grid">
+          <div>
+            <p>Welcome! I’m Joy (Ella) Wang, a multidisciplinary builder blending AI research, product development, and narrative design. I love uncovering patterns in complex systems and translating them into intuitive experiences.</p>
+            <p>Most recently, I have focused on <strong>computer vision</strong> and <strong>knowledge-enabled large language models</strong>, shipping prototypes that help teams move faster from idea to insight.</p>
+          </div>
+          <div class="about__highlights">
+            <h3>Highlights</h3>
+            <ul>
+              <li>Built data workflows that cut research turnaround time by 45%.</li>
+              <li>Led cross-functional launches for products serving 20K+ users.</li>
+              <li>Published peer-reviewed research spanning human-computer interaction and ML safety.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__cta">
+          <a class="button button--ghost" href="#experience">See experience</a>
+          <a class="button button--ghost" href="#contact">Download resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="experience">
+      <div class="section__inner">
+        <div class="section__header">
+          <h2>Experience</h2>
+          <p>Where research rigor meets product velocity.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline__item">
+            <span class="timeline__date">2023 — Present</span>
+            <h3>Senior Applied Scientist · Example Labs</h3>
+            <p>Prototyped multi-modal search experiences leveraging LLMs, increasing qualitative research efficiency by 60% across the org.</p>
+            <ul>
+              <li>Designed human-in-the-loop evaluation pipelines for safer deployments.</li>
+              <li>Partnered with product and design to shape experiment roadmap.</li>
+            </ul>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__date">2021 — 2023</span>
+            <h3>Product Manager · Insight Collective</h3>
+            <p>Launched analytics suite for enterprise clients, translating user interviews into actionable product strategy and KPI dashboards.</p>
+            <ul>
+              <li>Coached 5+ teams on rapid experimentation and data storytelling.</li>
+              <li>Drove adoption to 80% within first quarter post-launch.</li>
+            </ul>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__date">2018 — 2021</span>
+            <h3>Research Fellow · University Innovation Lab</h3>
+            <p>Investigated inclusive design principles and authored papers on ethical AI, presented at CHI and NeurIPS workshops.</p>
+            <ul>
+              <li>Built open-source tools for reproducible qualitative analysis.</li>
+              <li>Guest lectured on human-centered machine learning practices.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section__inner">
+        <div class="section__header">
+          <h2>Featured Projects</h2>
+          <p>A snapshot of experiments and shipped work.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Atlas</h3>
+            <p>Interactive knowledge base that maps research artifacts, enabling teams to discover insights through semantic clustering.</p>
+            <ul>
+              <li>Stack: Next.js, TypeScript, Pinecone, OpenAI API</li>
+              <li>Role: Product strategy, data modeling, UX research</li>
+            </ul>
+            <a class="card__link" href="#" aria-label="View Atlas project">Case study →</a>
+          </article>
+          <article class="card">
+            <h3>Grounded Vision</h3>
+            <p>Computer vision prototype pairing object detection with natural language references for field inspection teams.</p>
+            <ul>
+              <li>Cut manual reporting by 6 hours per week per team.</li>
+              <li>Piloted with 3 enterprise partners.</li>
+            </ul>
+            <a class="card__link" href="#" aria-label="View Grounded Vision project">Demo →</a>
+          </article>
+          <article class="card">
+            <h3>Curator</h3>
+            <p>Writing assistant that scaffolds research synthesis, helping analysts turn notes into narratives in minutes.</p>
+            <ul>
+              <li>Shipped as internal beta with 200+ active users.</li>
+              <li>Built evaluative rubric for responsible AI usage.</li>
+            </ul>
+            <a class="card__link" href="#" aria-label="View Curator project">Read more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="writing">
+      <div class="section__inner">
+        <div class="section__header">
+          <h2>Writing &amp; Talks</h2>
+          <p>Ideas on research craft, AI, and building intentional teams.</p>
+        </div>
+        <div class="writing-list">
+          <article class="writing-list__item">
+            <span class="writing-list__date">Jan 2024</span>
+            <a href="#">Designing guardrails for qualitative AI tooling</a>
+            <p>Framework for balancing velocity with responsible deployment.</p>
+          </article>
+          <article class="writing-list__item">
+            <span class="writing-list__date">Sep 2023</span>
+            <a href="#">Weaving narrative into product roadmaps</a>
+            <p>Talk at Product-led Summit on aligning storytelling with analytics.</p>
+          </article>
+          <article class="writing-list__item">
+            <span class="writing-list__date">May 2023</span>
+            <a href="#">Field notes from human-centered ML research</a>
+            <p>Lessons learned while bridging research and applied science teams.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section__inner">
+        <div class="section__header">
+          <h2>Let’s collaborate</h2>
+          <p>Interested in partnering, speaking, or just swapping ideas? Reach out.</p>
+        </div>
+        <div class="contact">
+          <div>
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+            <p>Location: Open to remote &amp; hybrid roles worldwide</p>
+          </div>
+          <div>
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Substack</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>© <span id="year"></span> Joy Wang. Crafted with curiosity and care.</p>
+    </div>
+  </footer>
+  <script>
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>
