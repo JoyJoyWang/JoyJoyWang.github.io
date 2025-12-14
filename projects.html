@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Ella Wang</title>
+  <meta name="description" content="Research and engineering projects in AI, computer vision, and infrastructure.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="site-title">Ella Wang</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Posts</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Projects</h1>
+    <p class="page-subtitle">
+      Research and engineering work in AI systems, computer vision, and infrastructure.
+    </p>
+
+    <div class="experience-item">
+      <h2 class="item-title"><a href="https://www.lepus-ai.tech/" target="_blank">Lepus AI</a></h2>
+      <div class="item-subtitle">Computer Vision Platform for Infrastructure Inspection</div>
+      <p>
+        Developed a computer vision platform for automated detection of structural cracks from imagery and LiDAR point clouds.
+        The system employs multiple state-of-the-art models including SAM (Segment Anything), BLIP, CLIP, CLIPSeg,
+        Grounding DINO, and UNet-VGG16 for comprehensive crack detection and analysis.
+      </p>
+      <p>
+        <strong>Impact:</strong> Achieved 31% accuracy improvement over baseline methods. Successfully commercialized
+        with UrbanTech Consulting Engineering P.C. for real-world infrastructure assessment applications.
+      </p>
+      <p>
+        <strong>Technologies:</strong> PyTorch, SAM, CLIP, BLIP, Grounding DINO, UNet, VGG16, LiDAR processing
+      </p>
+    </div>
+
+    <div class="experience-item">
+      <h2 class="item-title"><a href="https://alicellm.github.io/index.html" target="_blank">Alice AI</a></h2>
+      <div class="item-subtitle">Multi-Agent LLM Framework for 3D Scene Generation</div>
+      <p>
+        Built a multi-agent framework leveraging large language models for real-time 3D scene generation in game engines.
+        Fine-tuned LLaMA-3-8B and Mistral-7B using QLoRA (Quantized Low-Rank Adaptation) for efficient parameter-efficient training.
+      </p>
+      <p>
+        <strong>Impact:</strong> Doubled evaluation scores for scene generation quality and coherence.
+        Supported by Millennium Fellowship and Cornell ICPC.
+      </p>
+      <p>
+        <strong>Technologies:</strong> LLaMA-3, Mistral, QLoRA, Multi-agent systems, Unity/Unreal integration
+      </p>
+    </div>
+
+    <div class="experience-item">
+      <h2 class="item-title">AI-Powered Equity Research Platform</h2>
+      <div class="item-subtitle">Tokio Marine Group · Production System</div>
+      <p>
+        Designed and deployed a full-stack AI-powered research platform for real-time equity analysis and insights delivery.
+        Built AWS-native data pipelines using EC2, S3, RDS, and ECS with Dockerized CI/CD workflows.
+      </p>
+      <p>
+        <strong>Performance:</strong> Optimized per-ticker processing from 19 seconds to 1.5 seconds through parallel processing
+        and caching strategies. Developed systematic trading strategies achieving Sharpe ratios above 1.5 through disciplined backtesting.
+      </p>
+      <p>
+        <strong>Stack:</strong> React, TypeScript, Node.js, PostgreSQL with PGVector for embeddings, AWS (EC2, S3, RDS, ECS), Docker
+      </p>
+    </div>
+
+    <div class="experience-item">
+      <h2 class="item-title"><a href="https://github.com/CityScienceLab-Shanghai" target="_blank">CityScope Shenzhen</a></h2>
+      <div class="item-subtitle">MIT Media Lab City Science · Urban Planning Simulation</div>
+      <p>
+        Developed reusable simulation frameworks for multi-city urban planning analysis at MIT Media Lab's City Science group.
+        Created modular, scalable architecture enabling rapid deployment across different metropolitan contexts.
+      </p>
+      <p>
+        <strong>Technologies:</strong> Python, simulation frameworks, geospatial analysis, data visualization
+      </p>
+    </div>
+
+    <div class="experience-item">
+      <h2 class="item-title"><a href="https://www.media.mit.edu/projects/socity-dao/overview/" target="_blank">SoCity DAO</a></h2>
+      <div class="item-subtitle">MIT Media Lab · Prosocial Blockchain DApp</div>
+      <p>
+        Built a decentralized application (DApp) promoting prosocial behavior through blockchain-based incentive mechanisms.
+        Implemented smart contracts and frontend interactions in Rust and JavaScript.
+      </p>
+      <p>
+        <strong>Technologies:</strong> Rust, JavaScript, Blockchain, Smart Contracts, Web3
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <ul class="footer-links">
+        <li><a href="https://github.com/JoyJoyWang" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/ella-w-5205a9375" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/JoyJoyWang/Papers/blob/main/ALICE_Final.pdf" target="_blank">CV</a></li>
+      </ul>
+      <p>&copy; 2025 Ella Wang</p>
+    </div>
+  </footer>
+
+  <script src="theme.js"></script>
+</body>
+</html>

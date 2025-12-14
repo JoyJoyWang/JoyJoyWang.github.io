@@ -2,260 +2,265 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Joy Wang | Portfolio</title>
-  <meta name="description" content="Personal portfolio for Joy (Ella) Wang featuring research, projects, and writing.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ella Wang</title>
+  <meta name="description" content="AI Safety research notes on alignment, interpretability, and safety evaluations.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero" id="top">
-    <div class="hero__container">
-      <nav class="top-nav">
-        <a class="top-nav__brand" href="#top">Ella Wang</a>
-        <div class="top-nav__links">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#education">Education</a>
-          <a href="#projects">Projects</a>
-          <a href="#publications">Publications</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </div>
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="site-title">Ella Wang</a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Posts</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button></li>
+        </ul>
       </nav>
-      <div class="hero__content">
-        <p class="hero__eyebrow">Applied Scientist · Portfolio Manager Intern</p>
-        <h1 class="hero__title">Designing resilient AI systems that weave research into real-world impact.</h1>
-        <p class="hero__subtitle">
-          M.S. candidate in Computer &amp; Information Science (Cornell University &amp; Technion) with experience spanning quantitative finance, urban informatics, and multi-agent LLM platforms.
-        </p>
-        <div class="hero__actions">
-          <a class="button button--primary" href="#contact">Connect with me</a>
-          <a class="button button--ghost" href="#projects">Explore projects</a>
-        </div>
-      </div>
     </div>
   </header>
-  <main>
-    <section class="section" id="about">
-      <div class="section__inner">
-        <div class="section__header">
-          <h2>About</h2>
-          <p>Applied scientist and product builder translating complex systems into intuitive tools.</p>
-        </div>
-        <div class="about__grid">
-          <div>
-            <p>Hello, I’m Ella (Joy) Wang. I specialize in building data-intensive platforms that bridge research, engineering, and design. My work spans large-scale quantitative trading systems, city-scale simulations, and multi-agent AI experiences.</p>
-            <p>I thrive when pairing human-centered discovery with rigorous experimentation—whether that means optimizing model pipelines, orchestrating cloud-native deployments, or crafting end-to-end product narratives.</p>
+
+  <main class="container">
+    <div class="welcome-section">
+      <h1 class="page-title">👋 Welcome to My Learning Notes</h1>
+      <p class="page-subtitle">
+        Hi, this is Ella. I'm documenting my research notes on AI Safety since 2024.
+        Each post explores a foundational paper with my understanding and audio discussion.
+      </p>
+      <div class="social-links">
+        <a href="https://github.com/JoyJoyWang" target="_blank" aria-label="GitHub">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ella-w-5205a9375" target="_blank" aria-label="LinkedIn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/JoyJoyWang/Papers/blob/main/ALICE_Final.pdf" target="_blank" aria-label="CV">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- View Toggle -->
+    <div class="view-toggle">
+      <button class="view-btn active" data-view="timeline">Timeline</button>
+      <button class="view-btn" data-view="theme">By Theme</button>
+    </div>
+
+    <!-- Timeline View -->
+    <div id="timeline-view" class="posts-view">
+      <ul class="post-list">
+        <li class="post-item" data-tags="alignment rlhf">
+          <div class="post-meta">
+            <span>Date: January 15, 2025</span>
+            <span>Reading: 18 min</span>
+            <span>🎧 Podcast available</span>
           </div>
-          <div class="about__highlights">
-            <h3>Highlights</h3>
-            <ul>
-              <li>Scaled equity research pipelines with AWS + Docker, cutting processing from 19s to 1.5s per ticker.</li>
-              <li>Co-developed LLM agents for real-time 3D scene generation with 2× evaluation gains.</li>
-              <li>Published research across responsible AI, computer vision, and architectural computing.</li>
-            </ul>
+          <h2 class="post-title">
+            <a href="posts/understanding-rlhf.html">My Notes: Understanding RLHF</a>
+          </h2>
+          <div class="paper-reference">
+            <strong>Paper:</strong> <a href="https://arxiv.org/abs/2203.02155" target="_blank">Training language models to follow instructions with human feedback</a>
+            <br><em>Ouyang et al., 2022</em>
           </div>
-        </div>
-        <div class="about__cta">
-          <a class="button button--ghost" href="#experience">See experience</a>
-          <a class="button button--ghost" href="#publications">Browse publications</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--alt" id="experience">
-      <div class="section__inner">
-        <div class="section__header">
-          <h2>Experience</h2>
-          <p>Delivering AI-powered products from research to production.</p>
-        </div>
-        <div class="timeline">
-          <article class="timeline__item">
-            <span class="timeline__date">Jul 2024 — Present</span>
-            <h3>Quant Research Intern (returning Portfolio Manager) · Tokio Marine Group</h3>
-            <p>New York, NY — AI Equity Team</p>
-            <ul>
-              <li>Built AWS-native data pipelines (EC2, S3, RDS, ECS) with Dockerized CI/CD, shrinking per-ticker processing from 19s to 1.5s.</li>
-              <li>Shipped full-stack research platforms (React, TypeScript, Node.js, PGVector) to surface insights for investment teams and clients in real time.</li>
-              <li>Designed systematic strategies achieving Sharpe ratios above 1.5 through disciplined backtesting.</li>
-            </ul>
-          </article>
-          <article class="timeline__item">
-            <span class="timeline__date">Oct 2020 — Oct 2022</span>
-            <h3>Research &amp; Software Engineer Intern · MIT Media Lab (City Science Lab)</h3>
-            <p>Remote</p>
-            <ul>
-              <li>Developed reusable simulation frameworks (<a href="https://github.com/CityScienceLab-Shanghai">CityScope Shenzhen</a>) accelerating multi-city urban planning prototypes.</li>
-              <li>Built prosocial blockchain DApp (<a href="https://www.media.mit.edu/projects/socity-dao/overview/">SoCity</a>) in Rust and JavaScript, covering frontend, APIs, and smart contracts.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="education">
-      <div class="section__inner">
-        <div class="section__header">
-          <h2>Education</h2>
-          <p>Blending systems thinking with applied machine learning.</p>
-        </div>
-        <div class="timeline">
-          <article class="timeline__item">
-            <span class="timeline__date">2023 — 2025</span>
-            <h3>Cornell University &amp; Technion</h3>
-            <p>M.S. in Computer &amp; Information Science (Dual Degree), GPA: 3.9/4.0</p>
-            <ul>
-              <li>Coursework: Distributed Systems, Cloud Computing, Security &amp; Privacy, Generative Models.</li>
-            </ul>
-          </article>
-          <article class="timeline__item">
-            <span class="timeline__date">2019 — 2023</span>
-            <h3>Tongji University</h3>
-            <p>B.E. in Engineering · Minor in Artificial Intelligence, GPA: 3.9/4.0 (Top 1%)</p>
-            <ul>
-              <li>Coursework: Data Structures, Operating Systems, Networks, Databases, Machine Learning, NLP.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--alt" id="projects">
-      <div class="section__inner">
-        <div class="section__header">
-          <h2>Featured Projects</h2>
-          <p>Entrepreneurial experiments and research tooling.</p>
-        </div>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Lepus AI</h3>
-            <p>Founder-led computer vision platform detecting structural cracks from imagery and LiDAR.</p>
-            <ul>
-              <li>Models: SAM, BLIP, CLIP, CLIPSeg, Grounding DINO, UNet-VGG16.</li>
-              <li>+31% accuracy lift; commercialized with UrbanTech Consulting Engineering P.C.</li>
-              <li>Containerized pipelines on GCP/AWS with Kubernetes and Docker.</li>
-            </ul>
-            <a class="card__link" href="https://www.lepus-ai.tech/" aria-label="View Lepus AI project">Website →</a>
-          </article>
-          <article class="card">
-            <h3>Alice AI</h3>
-            <p>Multi-agent LLM framework for real-time 3D scene generation in game engines.</p>
-            <ul>
-              <li>Supported by Millennium &amp; Cornell ICPC.</li>
-              <li>Fine-tuned LLaMA-3-8B and Mistral-7B with QLoRA; doubled evaluation scores.</li>
-              <li>Explored collaborative agent orchestration for creative tooling.</li>
-            </ul>
-            <a class="card__link" href="https://alicellm.github.io/index.html" aria-label="Explore the Alice AI website">Website →</a>
-            <a class="card__link" href="https://github.com/JoyJoyWang/Papers/blob/main/ALICE_Final.pdf" aria-label="Read the Alice AI paper">Paper →</a>
-          </article>
-          <article class="card">
-            <h3>Equity Research Platform</h3>
-            <p>Internal SaaS delivering actionable quant research insights to investment teams.</p>
-            <ul>
-              <li>Stacks: React, TypeScript, Node.js, REST APIs, PGVector.</li>
-              <li>Real-time query workflows with guardrailed LLM components.</li>
-            </ul>
-            <a class="card__link" href="https://www.youtube.com/watch?v=QoVmoLbToVw" aria-label="Watch the equity research platform demo">Case study →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="publications">
-      <div class="section__inner">
-        <div class="section__header">
-          <h2>Publications</h2>
-          <p>Collaborative research across LLM safety, computer vision, and urban informatics.</p>
-        </div>
-        <div class="writing-list">
-          <article class="writing-list__item">
-            <span class="writing-list__date">2026 (submitted)</span>
-            <a href="https://github.com/JoyJoyWang">CTR-LoRA: Curvature-Aware and Trust-Region Guided Low-Rank Adaptation for Large Language Models</a>
-            <p>Submitted to ICASSP 2026. Equal contribution with Mo M., Xiao X., and collaborators.</p>
-          </article>
-          <article class="writing-list__item">
-            <span class="writing-list__date">2025 (submitted)</span>
-            <a href="https://github.com/CityScienceLab-Shanghai">PROBE: Self-Supervised Visual Prompting for Cross-Domain Road Damage Detection</a>
-            <p>Submitted to WACV 2025. Equal contribution with Xiao X., Mo M., and collaborators.</p>
-          </article>
-          <article class="writing-list__item">
-            <span class="writing-list__date">2024</span>
-            <a href="https://www.youtube.com/watch?v=QoVmoLbToVw">Color Harmony of Historical Buildings via Street View Image</a>
-            <p>Frontiers of Architectural Research, 2024. Co-authored with Yang R., Deng X., Shi H., and team.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--alt" id="skills">
-      <div class="section__inner">
-        <div class="section__header">
-          <h2>Skills</h2>
-          <p>Full-stack toolkit for research, engineering, and deployment.</p>
-        </div>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Languages &amp; Frameworks</h3>
-            <ul>
-              <li>Python, C++, Java, JavaScript, TypeScript, SQL.</li>
-              <li>React, Node.js, Spring Boot.</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Data &amp; Infrastructure</h3>
-            <ul>
-              <li>AWS, PostgreSQL, MySQL, PGVector.</li>
-              <li>Docker, Kubernetes, Terraform, Jenkins, GitHub Actions.</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Product &amp; Delivery</h3>
-            <ul>
-              <li>Git, Agile/Scrum, experiment design.</li>
-              <li>Testing (unit &amp; integration), cross-functional collaboration.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="section__inner">
-        <div class="section__header">
-          <h2>Let’s collaborate</h2>
-          <p>Interested in partnerships, research, or product collaborations? Reach out.</p>
-        </div>
-        <div class="contact">
-          <div>
-            <h3>Preferred Contact</h3>
-            <p>Send a message on LinkedIn or GitHub to start the conversation. I’m happy to share direct contact details once we connect.</p>
-            <p>Based in New York · Open to remote and hybrid roles worldwide.</p>
+          <p class="post-excerpt">
+            My exploration of RLHF from the InstructGPT paper—covering reward modeling, PPO training,
+            and practical alignment considerations. Includes implementation insights and safety implications.
+          </p>
+          <div class="post-tags">
+            <a href="#alignment" class="tag">alignment</a>
+            <a href="#rlhf" class="tag">rlhf</a>
           </div>
-          <div>
-            <h3>Links</h3>
-            <ul>
-              <li><a href="https://www.linkedin.com/in/ella-w-5205a9375">LinkedIn</a></li>
-              <li><a href="https://github.com/JoyJoyWang">GitHub</a></li>
-              <li><a href="https://github.com/JoyJoyWang/Papers/blob/main/ALICE_Final.pdf">Resume (PDF)</a></li>
-            </ul>
+        </li>
+
+        <li class="post-item" data-tags="interpretability">
+          <div class="post-meta">
+            <span>Date: January 8, 2025</span>
+            <span>Reading: 22 min</span>
+            <span>🎧 Podcast available</span>
           </div>
-        </div>
+          <h2 class="post-title">
+            <a href="posts/mechanistic-interpretability.html">My Notes: Circuits and Mechanistic Interpretability</a>
+          </h2>
+          <div class="paper-reference">
+            <strong>Paper:</strong> <a href="https://distill.pub/2020/circuits/" target="_blank">Zoom In: An Introduction to Circuits</a>
+            <br><em>Olah et al., Distill 2020</em>
+          </div>
+          <p class="post-excerpt">
+            Exploring how to reverse-engineer neural networks through circuit analysis. My understanding
+            of feature visualization techniques and their implications for AI safety.
+          </p>
+          <div class="post-tags">
+            <a href="#interpretability" class="tag">interpretability</a>
+            <a href="#circuits" class="tag">circuits</a>
+          </div>
+        </li>
+
+        <li class="post-item" data-tags="safety red-teaming">
+          <div class="post-meta">
+            <span>Date: December 28, 2024</span>
+            <span>Reading: 16 min</span>
+            <span>🎧 Podcast available</span>
+          </div>
+          <h2 class="post-title">
+            <a href="posts/red-teaming-llms.html">My Notes: Red Teaming LLMs</a>
+          </h2>
+          <div class="paper-reference">
+            <strong>Paper:</strong> <a href="https://arxiv.org/abs/2202.03286" target="_blank">Red Teaming Language Models with Language Models</a>
+            <br><em>Perez et al., 2022</em>
+          </div>
+          <p class="post-excerpt">
+            My study of automated red teaming methods for discovering LLM failure modes. Covers
+            systematic adversarial testing and building robust evaluation frameworks.
+          </p>
+          <div class="post-tags">
+            <a href="#safety" class="tag">safety</a>
+            <a href="#red-teaming" class="tag">red-teaming</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Theme View -->
+    <div id="theme-view" class="posts-view" style="display: none;">
+      <div class="theme-section">
+        <h2>A. Understanding the Problem</h2>
+        <p class="theme-description">Failure modes and research agendas</p>
+        <ul class="post-list">
+          <!-- Posts tagged with "problem" theme -->
+        </ul>
       </div>
-    </section>
+
+      <div class="theme-section">
+        <h2>B. Alignment & Preference Learning</h2>
+        <p class="theme-description">RLHF, DPO, and constitutional AI</p>
+        <ul class="post-list">
+          <li class="post-item">
+            <div class="post-meta">
+              <span>Date: January 15, 2025</span>
+              <span>Reading: 18 min</span>
+              <span>🎧 Podcast available</span>
+            </div>
+            <h2 class="post-title">
+              <a href="posts/understanding-rlhf.html">My Notes: Understanding RLHF</a>
+            </h2>
+            <div class="paper-reference">
+              <strong>Paper:</strong> <a href="https://arxiv.org/abs/2203.02155" target="_blank">Training language models to follow instructions with human feedback</a>
+              <br><em>Ouyang et al., 2022</em>
+            </div>
+            <p class="post-excerpt">
+              My exploration of RLHF from the InstructGPT paper—covering reward modeling, PPO training,
+              and practical alignment considerations.
+            </p>
+            <div class="post-tags">
+              <a href="#alignment" class="tag">alignment</a>
+              <a href="#rlhf" class="tag">rlhf</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="theme-section">
+        <h2>C. Interpretability</h2>
+        <p class="theme-description">Mechanistic interpretability and understanding model internals</p>
+        <ul class="post-list">
+          <li class="post-item">
+            <div class="post-meta">
+              <span>Date: January 8, 2025</span>
+              <span>Reading: 22 min</span>
+              <span>🎧 Podcast available</span>
+            </div>
+            <h2 class="post-title">
+              <a href="posts/mechanistic-interpretability.html">My Notes: Circuits and Mechanistic Interpretability</a>
+            </h2>
+            <div class="paper-reference">
+              <strong>Paper:</strong> <a href="https://distill.pub/2020/circuits/" target="_blank">Zoom In: An Introduction to Circuits</a>
+              <br><em>Olah et al., Distill 2020</em>
+            </div>
+            <p class="post-excerpt">
+              Exploring how to reverse-engineer neural networks through circuit analysis.
+            </p>
+            <div class="post-tags">
+              <a href="#interpretability" class="tag">interpretability</a>
+              <a href="#circuits" class="tag">circuits</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="theme-section">
+        <h2>D. Security & Adversarial Robustness</h2>
+        <p class="theme-description">Red teaming, jailbreaking, adversarial attacks</p>
+        <ul class="post-list">
+          <li class="post-item">
+            <div class="post-meta">
+              <span>Date: December 28, 2024</span>
+              <span>Reading: 16 min</span>
+              <span>🎧 Podcast available</span>
+            </div>
+            <h2 class="post-title">
+              <a href="posts/red-teaming-llms.html">My Notes: Red Teaming LLMs</a>
+            </h2>
+            <div class="paper-reference">
+              <strong>Paper:</strong> <a href="https://arxiv.org/abs/2202.03286" target="_blank">Red Teaming Language Models with Language Models</a>
+              <br><em>Perez et al., 2022</em>
+            </div>
+            <p class="post-excerpt">
+              My study of automated red teaming methods for discovering LLM failure modes.
+            </p>
+            <div class="post-tags">
+              <a href="#safety" class="tag">safety</a>
+              <a href="#red-teaming" class="tag">red-teaming</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="theme-section">
+        <h2>E. Evaluation & Governance</h2>
+        <p class="theme-description">Safety assessment frameworks for frontier models</p>
+        <ul class="post-list">
+          <!-- Posts tagged with "governance" theme -->
+        </ul>
+      </div>
+    </div>
   </main>
-  <footer class="footer">
-    <div class="footer__inner">
-      <p>© <span id="year"></span> Joy Wang. Crafted with curiosity and care.</p>
+
+  <footer>
+    <div class="footer-content">
+      <ul class="footer-links">
+        <li><a href="https://github.com/JoyJoyWang" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/ella-w-5205a9375" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/JoyJoyWang/Papers/blob/main/ALICE_Final.pdf" target="_blank">CV</a></li>
+      </ul>
+      <p>&copy; 2025 Ella Wang</p>
     </div>
   </footer>
+
+  <script src="theme.js"></script>
   <script>
-    const yearEl = document.getElementById('year');
-    if (yearEl) {
-      yearEl.textContent = new Date().getFullYear();
-    }
+    // View toggle functionality
+    const timelineView = document.getElementById('timeline-view');
+    const themeView = document.getElementById('theme-view');
+    const viewBtns = document.querySelectorAll('.view-btn');
+
+    viewBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const view = btn.dataset.view;
+
+        viewBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        if (view === 'timeline') {
+          timelineView.style.display = 'block';
+          themeView.style.display = 'none';
+        } else {
+          timelineView.style.display = 'none';
+          themeView.style.display = 'block';
+        }
+      });
+    });
   </script>
 </body>
 </html>

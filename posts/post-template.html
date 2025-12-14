@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Title | Ella Wang</title>
+  <meta name="description" content="Brief description of the post">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="../index.html" class="site-title">Ella Wang</a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../posts.html" class="active">Posts</a></li>
+          <li><a href="../resources.html">AI Safety Resources</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article>
+      <header class="article-header">
+        <h1 class="article-title">Your Post Title Here</h1>
+        <div class="article-meta">
+          January 15, 2025 · 15 min read · 
+          <a href="#" class="tag">alignment</a>
+          <a href="#" class="tag">rlhf</a>
+        </div>
+      </header>
+
+      <!-- Podcast Audio Player -->
+      <div class="podcast-player">
+        <div class="podcast-title">🎧 Listen to this post</div>
+        <div class="audio-controls">
+          <audio id="mainAudio" controls>
+            <source src="audio/your-post-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <!-- Playlist for continuous listening -->
+        <div class="playlist">
+          <div class="playlist-title">Continue with other posts:</div>
+          <ul class="playlist-items" id="playlist">
+            <!-- Playlist items will be added by JavaScript -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="article-content">
+        <p>
+          Start your post content here. Write clearly and directly about technical topics.
+          Focus on substance over style.
+        </p>
+
+        <h2>Main Section</h2>
+
+        <p>
+          Your content here. Use headings, paragraphs, lists, code blocks, and blockquotes
+          to structure your thoughts.
+        </p>
+
+        <h3>Subsection</h3>
+
+        <p>More detailed content in subsections.</p>
+
+        <ul>
+          <li>Bullet point one</li>
+          <li>Bullet point two</li>
+          <li>Bullet point three</li>
+        </ul>
+
+        <h2>Code Examples</h2>
+
+        <p>Inline code like <code>model.generate()</code> or full blocks:</p>
+
+        <pre><code>from transformers import AutoModelForCausalLM
+
+model = AutoModelForCausalLM.from_pretrained(
+    "meta-llama/Llama-2-7b-hf",
+    torch_dtype=torch.float16
+)
+
+output = model.generate(input_ids, max_length=100)</code></pre>
+
+        <h2>Citations and References</h2>
+
+        <p>
+          When citing papers, use simple inline citations: Christiano et al. (2017) introduced
+          the concept of learning from human preferences. Include a references section at the end.
+        </p>
+
+        <blockquote>
+          Use blockquotes for important points or direct quotes from papers.
+        </blockquote>
+
+        <h2>References</h2>
+
+        <ol>
+          <li>Christiano et al. (2017). <a href="https://arxiv.org/abs/1706.03741">Deep Reinforcement Learning from Human Preferences</a>. arXiv.</li>
+          <li>Ouyang et al. (2022). <a href="https://arxiv.org/abs/2203.02155">Training language models to follow instructions with human feedback</a>. arXiv.</li>
+        </ol>
+      </div>
+    </article>
+
+    <nav class="mt-3">
+      <a href="../posts.html">← All posts</a>
+    </nav>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <ul class="footer-links">
+        <li><a href="https://github.com/JoyJoyWang" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/ella-w-5205a9375" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/JoyJoyWang/Papers/blob/main/ALICE_Final.pdf" target="_blank">CV</a></li>
+      </ul>
+      <p>&copy; 2025 Ella Wang</p>
+    </div>
+  </footer>
+
+  <script>
+    // Playlist configuration - update this array with your posts
+    const playlistData = [
+      {
+        title: "Understanding RLHF: Theory and Practice",
+        file: "audio/understanding-rlhf.mp3",
+        url: "understanding-rlhf.html",
+        duration: "18:42"
+      },
+      {
+        title: "Circuits and Features: Mechanistic Interpretability",
+        file: "audio/mechanistic-interpretability.mp3",
+        url: "mechanistic-interpretability.html",
+        duration: "22:15"
+      },
+      {
+        title: "Adversarial Testing and Red Teaming for LLMs",
+        file: "audio/red-teaming-llms.mp3",
+        url: "red-teaming-llms.html",
+        duration: "16:30"
+      }
+    ];
+
+    // Get current post from URL
+    const currentPage = window.location.pathname.split('/').pop();
+    
+    // Initialize playlist
+    const audioPlayer = document.getElementById('mainAudio');
+    const playlistElement = document.getElementById('playlist');
+    let currentTrackIndex = playlistData.findIndex(track => track.url === currentPage);
+
+    // Populate playlist
+    playlistData.forEach((track, index) => {
+      const li = document.createElement('li');
+      li.className = 'playlist-item';
+      if (track.url === currentPage) {
+        li.classList.add('active');
+      }
+      
+      li.innerHTML = `
+        <span class="item-title">${track.title}</span>
+        <span class="item-duration">${track.duration}</span>
+      `;
+      
+      li.addEventListener('click', () => {
+        window.location.href = track.url;
+      });
+      
+      playlistElement.appendChild(li);
+    });
+
+    // Auto-play next track when current ends
+    audioPlayer.addEventListener('ended', () => {
+      const nextIndex = currentTrackIndex + 1;
+      if (nextIndex < playlistData.length) {
+        window.location.href = playlistData[nextIndex].url;
+      }
+    });
+
+    // Mark currently playing track
+    audioPlayer.addEventListener('play', () => {
+      const items = document.querySelectorAll('.playlist-item');
+      items.forEach((item, index) => {
+        if (index === currentTrackIndex) {
+          item.classList.add('playing');
+        } else {
+          item.classList.remove('playing');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
